@@ -12,6 +12,13 @@ using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Reflection;
+
+[assembly: AssemblyTitle("SSH Key Manager")]
+[assembly: AssemblyProduct("SSH Key Manager")]
+[assembly: AssemblyCopyright("Copyright (c) 2026 0fells, MIT License")]
+[assembly: AssemblyVersion("1.0.0.0")]
+[assembly: AssemblyFileVersion("1.0.0.0")]
 
 namespace SshKeyManager
 {

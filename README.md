@@ -35,6 +35,10 @@
 - Если клиента OpenSSH нет: "Параметры" → "Приложения" → "Дополнительные компоненты" → "Клиент OpenSSH".
 - На серверах: Linux или другая Unix-система с `sh`, `awk`, `grep`, `mktemp`, `base64`.
 
+## Установка
+
+Скачайте `SSH-Key-Manager.exe` со страницы [Releases](https://github.com/0fells/ssh-key-manager/releases/latest) и запустите. Установка не нужна. Контрольная сумма лежит там же, в `SHA256SUMS`.
+
 ## Сборка
 
 Отдельные инструменты не нужны, используется компилятор C# из состава Windows:
@@ -58,6 +62,10 @@ build.cmd
 - При первом подключении ключ сервера принимается без проверки (`StrictHostKeyChecking=accept-new`).
 - Заливка и удаление ключа на серверах с Windows OpenSSH не поддерживаются.
 
+## Лицензия
+
+[MIT](LICENSE)
+
 # English
 
 A small GUI program for people who don't want to deal with `ssh-keygen`, `authorized_keys` and file permissions by hand. It uses the standard OpenSSH client built into Windows; nothing else to install.
@@ -79,6 +87,10 @@ A small GUI program for people who don't want to deal with `ssh-keygen`, `author
 - Windows 10 1809 or later, or Windows 11 (they already include .NET Framework 4.x and the OpenSSH client).
 - If the OpenSSH client is missing: "Settings" → "Apps" → "Optional features" → "OpenSSH Client".
 - On servers: Linux or another Unix system with `sh`, `awk`, `grep`, `mktemp`, `base64`.
+
+## Installation
+
+Download `SSH-Key-Manager.exe` from [Releases](https://github.com/0fells/ssh-key-manager/releases/latest) and run it. No installation needed. The checksum is in `SHA256SUMS` next to it.
 
 ## Building
 
@@ -102,3 +114,7 @@ build.cmd
 - The key passphrase is passed to `ssh-keygen` on the command line and is visible to other programs of your Windows user while the key is being created. If that matters, create the key without a passphrase or with `ssh-keygen` in a console.
 - On first connection the server host key is accepted without verification (`StrictHostKeyChecking=accept-new`).
 - Uploading and removing keys on Windows OpenSSH servers is not supported.
+
+## License
+
+[MIT](LICENSE)
